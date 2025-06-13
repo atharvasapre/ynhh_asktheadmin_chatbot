@@ -261,14 +261,14 @@ export function Component(): JSX.Element {
         <div className={styles.askContainer}>
             {/* Setting the page title using react-helmet-async */}
             <Helmet>
-                <title>{t("pageTitle")}</title>
+                <title>{t("")}</title>
             </Helmet>
             <div className={styles.askTopSection}>
                 <div className={styles.commandsContainer}>
                     {showUserUpload && <UploadFile className={styles.commandButton} disabled={loggedIn} />}
                     <SettingsButton className={styles.commandButton} onClick={() => setIsConfigPanelOpen(!isConfigPanelOpen)} />
                 </div>
-                <h1 className={styles.askTitle}>{t("askTitle")}</h1>
+                <h1 className={styles.askTitle}>{t("Ask the YNHH ED Handbook")}</h1>
                 <div className={styles.askQuestionInput}>
                     <QuestionInput
                         placeholder={t("gpt4vExamples.placeholder")}
